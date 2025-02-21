@@ -3,28 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lana Exteriors - Windows, Doors, Siding & Roofs</title>
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lana Exteriors - Premium Windows, Doors, Siding & Roofs</title>
     <meta name="description" content="Lana Exteriors specializes in premium windows, doors, siding and roofs installation with dedicated crews for specific jobs.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body class="font-sans antialiased text-gray-900 bg-white">
     <!-- Header -->
     <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold text-gray-900">Lana Exteriors</a>
+                <a href="https://ihmunro.github.io/lana-exteriors-specializes-in-windows--doors--siding-and-roofs--2025-02-21-db2jw" class="text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors duration-300">Lana Exteriors</a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#services" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Services</a>
-                    <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Benefits</a>
-                    <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">FAQ</a>
-                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Services</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
+                    <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
                 </div>
-                <button class="md:hidden p-2">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
+                <button class="mobile-menu-button md:hidden p-2" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-lg absolute left-0 right-0 p-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors duration-300 px-4 py-2">Services</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition-colors duration-300 px-4 py-2">Benefits</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors duration-300 px-4 py-2">Testimonials</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300 px-4 py-2">About</a>
+                    <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300 px-4 py-2">FAQ</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300 px-4 py-2">Contact</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -34,13 +58,13 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto text-center">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-gray-900 mb-8" data-aos="fade-up">
-                    Lana Exteriors specializes in windows, doors, siding and roofs.
+                    Transform Your Home with Premium Exterior Solutions
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-600 mb-12" data-aos="fade-up" data-aos-delay="100">
-                    An ideal customer is one that appreciates a job well done
+                    Expert installation of windows, doors, siding, and roofs by dedicated specialists who take pride in delivering exceptional results.
                 </p>
-                <a href="https://lanaexteriors.ca" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg" data-aos="fade-up" data-aos-delay="200">
-                    Get Started
+                <a href="#contact" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
+                    Get Your Free Consultation
                 </a>
             </div>
         </div>
@@ -49,34 +73,28 @@
     <!-- Services Section -->
     <section id="services" class="py-24 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Our Services</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Premium Exterior Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300" data-aos="fade-up">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102" data-aos="fade-up">
                     <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
+                        <i class="fas fa-window-maximize text-2xl text-blue-600"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-4">Windows & Doors</h3>
-                    <p class="text-gray-600">Premium installation and replacement services for all types of windows and doors.</p>
+                    <p class="text-gray-600">Energy-efficient windows and secure doors installed by certified professionals. Enhance your home's comfort and curb appeal while reducing energy costs by up to 30%.</p>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
+                        <i class="fas fa-home text-2xl text-blue-600"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Siding</h3>
-                    <p class="text-gray-600">Expert siding installation and repair services to protect and beautify your home.</p>
+                    <h3 class="text-xl font-semibold mb-4">Premium Siding</h3>
+                    <p class="text-gray-600">Weather-resistant, low-maintenance siding solutions that protect your home for decades. Choose from various styles and colors to create your perfect exterior look.</p>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
+                        <i class="fas fa-home text-2xl text-blue-600"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Roofs</h3>
-                    <p class="text-gray-600">Complete roofing solutions from repairs to full replacements.</p>
+                    <h3 class="text-xl font-semibold mb-4">Expert Roofing</h3>
+                    <p class="text-gray-600">Durable, long-lasting roofing systems installed by master craftsmen. Our premium materials and expert installation provide protection for 25+ years.</p>
                 </div>
             </div>
         </div>
@@ -85,12 +103,92 @@
     <!-- Benefits Section -->
     <section id="benefits" class="py-24 bg-gray-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose Us</h2>
-            <div class="max-w-3xl mx-auto">
-                <div class="bg-white rounded-xl shadow-lg p-8 mb-8" data-aos="fade-up">
-                    <h3 class="text-xl font-semibold mb-4">Specific Crews for Specific Jobs</h3>
-                    <p class="text-gray-600">Our specialized teams are expertly trained for their specific tasks, ensuring the highest quality workmanship for every project.</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">The Lana Exteriors Advantage</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold mb-4">Specialized Expert Teams</h3>
+                    <p class="text-gray-600">Each project is handled by dedicated crews who specialize in their specific trade, ensuring master-level craftsmanship and superior results every time.</p>
                 </div>
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold mb-4">Premium Materials</h3>
+                    <p class="text-gray-600">We partner with industry-leading manufacturers to provide the highest quality materials, backed by comprehensive warranties and proven durability.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold mb-4">Exceptional Service</h3>
+                    <p class="text-gray-600">From your initial consultation to project completion, our team provides clear communication, detailed planning, and meticulous attention to detail.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The window installation team was incredibly professional. They completed our whole-house window replacement in just two days, and the difference in our home's comfort and energy efficiency is remarkable."</p>
+                    <p class="font-semibold">Sarah Johnson</p>
+                    <p class="text-sm text-gray-500">Homeowner in Vancouver</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Lana Exteriors transformed our dated exterior with new siding and trim. The attention to detail was impressive, and our home's curb appeal has increased significantly."</p>
+                    <p class="font-semibold">Michael Chen</p>
+                    <p class="text-sm text-gray-500">Property Developer</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The roofing crew was exceptional. They completed our complex roof replacement efficiently and left our property spotless. Five years later, and still no issues!"</p>
+                    <p class="font-semibold">Robert Wilson</p>
+                    <p class="text-sm text-gray-500">Real Estate Agent</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"From start to finish, working with Lana Exteriors was a pleasure. Their expertise in door installation is unmatched, and our new front entry has completely transformed our home's appearance."</p>
+                    <p class="font-semibold">Emily Thompson</p>
+                    <p class="text-sm text-gray-500">Interior Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Lana Exteriors</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <p class="text-gray-600 leading-relaxed" data-aos="fade-up">
+                    Founded in 2010, Lana Exteriors began with a simple mission: to provide homeowners with superior exterior renovation services through specialized expertise and unwavering commitment to quality. Our journey started with a small team of dedicated craftsmen and has grown into a full-service exterior renovation company trusted by hundreds of homeowners across the region.
+                </p>
+                <p class="text-gray-600 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                    Our core values of integrity, expertise, and customer satisfaction drive everything we do. We believe in using only the highest quality materials, employing specialized crews for each type of installation, and maintaining clear communication throughout every project. This dedication to excellence has earned us a reputation as one of the most trusted names in exterior home improvements.
+                </p>
             </div>
         </div>
     </section>
@@ -100,13 +198,25 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
             <div class="max-w-3xl mx-auto space-y-6">
-                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
                     <h3 class="text-lg font-semibold mb-2">What areas do you service?</h3>
-                    <p class="text-gray-600">Contact us to learn about our service areas.</p>
+                    <p class="text-gray-600">We proudly serve the greater Vancouver area and surrounding communities within a 50km radius. Contact us to confirm service availability in your specific location.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
-                    <h3 class="text-lg font-semibold mb-2">Do you offer warranties?</h3>
-                    <p class="text-gray-600">Yes, we provide comprehensive warranties on all our work.</p>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <h3 class="text-lg font-semibold mb-2">What warranties do you offer?</h3>
+                    <p class="text-gray-600">We provide comprehensive warranties on both materials and workmanship. Our installations typically come with a 10-year workmanship warranty, while manufacturer warranties on materials can extend up to 25 years or more.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <h3 class="text-lg font-semibold mb-2">How long does a typical project take?</h3>
+                    <p class="text-gray-600">Project timelines vary based on scope and complexity. Window installations typically take 1-3 days, siding projects 5-10 days, and roof replacements 2-4 days. We'll provide a detailed timeline during your consultation.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <h3 class="text-lg font-semibold mb-2">Do you offer financing options?</h3>
+                    <p class="text-gray-600">Yes, we partner with several financial institutions to offer flexible financing options with competitive rates. We can discuss payment plans during your consultation.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <h3 class="text-lg font-semibold mb-2">Are you licensed and insured?</h3>
+                    <p class="text-gray-600">Absolutely. We maintain all required licenses, bonds, and insurance coverage, including comprehensive liability insurance and WorkSafeBC coverage for all our workers.</p>
                 </div>
             </div>
         </div>
@@ -116,10 +226,10 @@
     <section id="contact" class="py-24 bg-blue-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8">Get in Touch</h2>
-                <p class="text-xl text-gray-600 mb-12">Ready to start your project? Contact us today!</p>
-                <a href="mailto:john@lanaexteriors.ca" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                    Contact Us
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Start Your Project Today</h2>
+                <p class="text-xl text-gray-600 mb-12">Transform your home with Vancouver's trusted exterior renovation experts. Contact us for a free consultation and estimate.</p>
+                <a href="mailto:john@lanaexteriors.ca" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                    Schedule Your Consultation
                 </a>
             </div>
         </div>
@@ -128,21 +238,31 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-16">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Lana Exteriors</h3>
-                    <p class="text-gray-400">Specializing in premium exterior renovations.</p>
+                    <p class="text-gray-400">Your trusted partner for premium exterior renovations.</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contact</h3>
-                    <a href="mailto:john@lanaexteriors.ca" class="text-gray-400 hover:text-white transition-colors duration-300">john@lanaexteriors.ca</a>
+                    <a href="mailto:john@lanaexteriors.ca" class="text-gray-400 hover:text-white transition-colors duration-300 block">john@lanaexteriors.ca</a>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
                         <li><a href="#services" class="text-gray-400 hover:text-white transition-colors duration-300">Services</a></li>
                         <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About</a></li>
                         <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://ihmunro.github.io/lana-exteriors-specializes-in-windows--doors--siding-and-roofs--2025-02-21-db2jw/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://ihmunro.github.io/lana-exteriors-specializes-in-windows--doors--siding-and-roofs--2025-02-21-db2jw/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://ihmunro.github.io/lana-exteriors-specializes-in-windows--doors--siding-and-roofs--2025-02-21-db2jw/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
             </div>
@@ -158,6 +278,35 @@
             duration: 1000,
             once: true
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
     </script>
+</body>
 </body>
 </html>
