@@ -3,14 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lana Exteriors - Premium Windows, Doors, Siding & Roofs</title>
-    <meta name="description" content="Lana Exteriors specializes in premium windows, doors, siding and roofs installation with dedicated crews for specific jobs.">
+    <title>Lana Exteriors - Premium Windows, Doors, Siding & Roofs in Alberta</title>
+    <meta name="description" content="Lana Exteriors specializes in premium windows, doors, siding and roofs installation in Alberta with dedicated crews for specific jobs. Get a free consultation today.">
+    <meta name="keywords" content="windows installation, doors, siding, roofing, Alberta, home exterior, renovation, home improvement">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Lana Exteriors - Premium Windows, Doors, Siding & Roofs">
+    <meta property="og:description" content="Transform your home with Alberta's trusted exterior renovation experts. Energy-efficient windows, premium siding, and expert roofing services.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf">
+    <meta property="og:url" content="https://lanaexteriors.ca">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://lanaexteriors.ca">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
     <style>
         html {
             scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 50%, #eff6ff 100%);
+        }
+
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .service-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+            color: #2563eb;
         }
 
         @keyframes marquee {
@@ -25,9 +79,50 @@
         .group:hover .group-hover\:\[animation-play-state\:paused\] {
             animation-play-state: paused;
         }
+
+        .testimonial-card {
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            border-color: rgba(59, 130, 246, 0.5);
+            transform: translateY(-5px) scale(1.02);
+        }
+
+        .faq-item {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .faq-item:hover {
+            background-color: #f8fafc;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+        }
+
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
-<body class="font-sans antialiased text-gray-900 bg-white">
+<body class="font-sans antialiased text-gray-900 bg-white" itemscope itemtype="http://schema.org/LocalBusiness">
     <!-- Header -->
     <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -59,47 +154,114 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-24 bg-gradient-to-b from-blue-50 to-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-gray-900 mb-8" data-aos="fade-up">
-                    Transform Your Home with Premium Exterior Solutions
-                </h1>
-                <p class="text-xl md:text-2xl text-gray-600 mb-12" data-aos="fade-up" data-aos-delay="100">
-                    Expert installation of windows, doors, siding, and roofs by dedicated specialists who take pride in delivering exceptional results.
-                </p>
-                <a href="#contact" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
-                    Get Your Free Consultation
-                </a>
+    <section class="pt-32 pb-24 hero-gradient overflow-hidden relative">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=2070&auto=format&fit=crop" alt="Background texture" class="w-full h-full object-cover">
+        </div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="max-w-3xl text-center md:text-left" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-gray-900 mb-8 text-shadow">
+                        Transform Your Home with <span class="text-blue-600">Premium Exterior Solutions</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-700 mb-12">
+                        Expert installation of windows, doors, siding, and roofs by dedicated specialists who take pride in delivering exceptional results.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#contact" class="btn-primary inline-block text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
+                            Get Your Free Consultation
+                        </a>
+                        <a href="#services" class="inline-block bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-all duration-300">
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+                <div class="relative w-full md:w-1/2" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=1170&auto=format&fit=crop" alt="Modern home exterior" class="w-full h-auto rounded-xl shadow-2xl">
+                    <div class="absolute -bottom-4 -left-4 bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg">
+                        <div class="flex items-center gap-2">
+                            <div class="bg-green-500 text-white p-2 rounded-full">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p class="font-medium">Trusted by 500+ homeowners</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="flex justify-center mt-16">
+                <div class="flex gap-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVo6bR5bp5kL3ZaGEY7QtOTDHJt4JBQVjYOQ&usqp=CAU" alt="Award badge" class="h-16 w-auto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQvU2K4PBTg4qJOJYYmNj_-o34wDHlJOXUHw&usqp=CAU" alt="Quality badge" class="h-16 w-auto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOW-UN3mOefDFwrL7byTyxDDTG-iC0O1gW0A&usqp=CAU" alt="Certified badge" class="h-16 w-auto">
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full h-auto">
+                <path fill="#ffffff" fill-opacity="1" d="M0,128L80,144C160,160,320,192,480,192C640,192,800,160,960,149.3C1120,139,1280,149,1360,154.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+            </svg>
         </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="py-24 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Premium Exterior Services</h2>
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-600 font-medium text-sm mb-4">OUR SERVICES</span>
+                <h2 class="text-3xl md:text-4xl font-bold">Premium Exterior <span class="text-blue-600">Solutions</span></h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102" data-aos="fade-up">
-                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-window-maximize text-2xl text-blue-600"></i>
+                <!-- Windows & Doors Card -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-blue-600 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div style="font-size: 64px; font-weight: bold;">W</div>
+                            <div style="margin-top: -10px;">Windows & Doors</div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Windows & Doors</h3>
-                    <p class="text-gray-600">Energy-efficient windows and secure doors installed by certified professionals. Enhance your home's comfort and curb appeal while reducing energy costs by up to 30%.</p>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-4">Windows & Doors</h3>
+                        <p class="text-gray-600 mb-6">Energy-efficient windows and secure doors installed by certified professionals. Enhance your home's comfort and curb appeal while reducing energy costs by up to 30%.</p>
+                        <a href="#contact" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors duration-300">
+                            Learn More →
+                        </a>
+                    </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-home text-2xl text-blue-600"></i>
+                
+                <!-- Premium Siding Card -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-blue-600 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div style="font-size: 64px; font-weight: bold;">S</div>
+                            <div style="margin-top: -10px;">Premium Siding</div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Premium Siding</h3>
-                    <p class="text-gray-600">Weather-resistant, low-maintenance siding solutions that protect your home for decades. Choose from various styles and colors to create your perfect exterior look.</p>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-4">Premium Siding</h3>
+                        <p class="text-gray-600 mb-6">Weather-resistant, low-maintenance siding solutions that protect your home for decades. Choose from various styles and colors to create your perfect exterior look.</p>
+                        <a href="#contact" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors duration-300">
+                            Learn More →
+                        </a>
+                    </div>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-102" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-home text-2xl text-blue-600"></i>
+                
+                <!-- Expert Roofing Card -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-blue-600 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <div style="font-size: 64px; font-weight: bold;">R</div>
+                            <div style="margin-top: -10px;">Expert Roofing</div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Expert Roofing</h3>
-                    <p class="text-gray-600">Durable, long-lasting roofing systems installed by master craftsmen. Our premium materials and expert installation provide protection for 25+ years.</p>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-4">Expert Roofing</h3>
+                        <p class="text-gray-600 mb-6">Durable, long-lasting roofing systems installed by master craftsmen. Our premium materials and expert installation provide protection for 25+ years.</p>
+                        <a href="#contact" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors duration-300">
+                            Learn More →
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,7 +313,7 @@
                     </div>
                     <div class="flex flex-col items-start">
                       <h3 class="text-md font-semibold leading-none">Sarah Johnson</h3>
-                      <p class="text-sm text-gray-600">Homeowner in Vancouver</p>
+                      <p class="text-sm text-gray-600">Homeowner in Calgary</p>
                     </div>
                   </div>
                   <p class="sm:text-md mt-4 text-sm text-gray-600">
@@ -215,7 +377,7 @@
                     </div>
                     <div class="flex flex-col items-start">
                       <h3 class="text-md font-semibold leading-none">Patricia Martinez</h3>
-                      <p class="text-sm text-gray-600">Homeowner in Richmond</p>
+                      <p class="text-sm text-gray-600">Homeowner in Edmonton</p>
                     </div>
                   </div>
                   <p class="sm:text-md mt-4 text-sm text-gray-600">
@@ -282,41 +444,147 @@
     <!-- FAQ Section -->
     <section id="faq" class="py-24 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-600 font-medium text-sm mb-4">ANSWERS</span>
+                <h2 class="text-3xl md:text-4xl font-bold">Frequently Asked <span class="text-blue-600">Questions</span></h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mt-6 rounded-full"></div>
+            </div>
             <div class="max-w-3xl mx-auto space-y-6">
-                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
-                    <h3 class="text-lg font-semibold mb-2">What areas do you service?</h3>
-                    <p class="text-gray-600">We proudly serve the greater Vancouver area and surrounding communities within a 50km radius. Contact us to confirm service availability in your specific location.</p>
+                <div class="faq-item bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-lg font-semibold">What areas do you service?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer overflow-hidden mt-2">
+                        <p class="text-gray-600 pt-4">We proudly serve the greater Alberta area and surrounding communities. Contact us to confirm service availability in your specific location.</p>
+                    </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
-                    <h3 class="text-lg font-semibold mb-2">What warranties do you offer?</h3>
-                    <p class="text-gray-600">We provide comprehensive warranties on both materials and workmanship. Our installations typically come with a 10-year workmanship warranty, while manufacturer warranties on materials can extend up to 25 years or more.</p>
+                <div class="faq-item bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-lg font-semibold">What warranties do you offer?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer overflow-hidden mt-2">
+                        <p class="text-gray-600 pt-4">We provide comprehensive warranties on both materials and workmanship. Our installations typically come with a 10-year workmanship warranty, while manufacturer warranties on materials can extend up to 25 years or more.</p>
+                    </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
-                    <h3 class="text-lg font-semibold mb-2">How long does a typical project take?</h3>
-                    <p class="text-gray-600">Project timelines vary based on scope and complexity. Window installations typically take 1-3 days, siding projects 5-10 days, and roof replacements 2-4 days. We'll provide a detailed timeline during your consultation.</p>
+                <div class="faq-item bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-lg font-semibold">How long does a typical project take?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer overflow-hidden mt-2">
+                        <p class="text-gray-600 pt-4">Project timelines vary based on scope and complexity. Window installations typically take 1-3 days, siding projects 5-10 days, and roof replacements 2-4 days. We'll provide a detailed timeline during your consultation.</p>
+                    </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
-                    <h3 class="text-lg font-semibold mb-2">Do you offer financing options?</h3>
-                    <p class="text-gray-600">Yes, we partner with several financial institutions to offer flexible financing options with competitive rates. We can discuss payment plans during your consultation.</p>
+                <div class="faq-item bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-lg font-semibold">Do you offer financing options?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer overflow-hidden mt-2">
+                        <p class="text-gray-600 pt-4">Yes, we partner with several financial institutions to offer flexible financing options with competitive rates. We can discuss payment plans during your consultation.</p>
+                    </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
-                    <h3 class="text-lg font-semibold mb-2">Are you licensed and insured?</h3>
-                    <p class="text-gray-600">Absolutely. We maintain all required licenses, bonds, and insurance coverage, including comprehensive liability insurance and WorkSafeBC coverage for all our workers.</p>
+                <div class="faq-item bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300" data-aos="fade-up">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-lg font-semibold">Are you licensed and insured?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer overflow-hidden mt-2">
+                        <p class="text-gray-600 pt-4">Absolutely. We maintain all required licenses, bonds, and insurance coverage, including comprehensive liability insurance and WCB-Alberta coverage for all our workers.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-blue-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8">Start Your Project Today</h2>
-                <p class="text-xl text-gray-600 mb-12">Transform your home with Vancouver's trusted exterior renovation experts. Contact us for a free consultation and estimate.</p>
-                <a href="mailto:john@lanaexteriors.ca" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                    Schedule Your Consultation
-                </a>
+    <section id="contact" class="py-24 bg-blue-50 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/3 h-full hidden lg:block">
+            <img src="https://images.unsplash.com/photo-1571055107559-3e67626fa8be?q=80&w=1462&auto=format&fit=crop" class="h-full w-full object-cover" alt="Home exterior">
+            <div class="absolute inset-0 bg-gradient-to-l from-transparent to-blue-50"></div>
+        </div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="mb-12" data-aos="fade-right">
+                        <span class="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-600 font-medium text-sm mb-4">CONTACT US</span>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">Start Your Project <span class="text-blue-600">Today</span></h2>
+                        <p class="text-xl text-gray-600">Transform your home with Alberta's trusted exterior renovation experts. Contact us for a free consultation and estimate.</p>
+                    </div>
+                    <div class="mb-12 space-y-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-start">
+                            <div class="bg-white rounded-full p-3 shadow-md mr-4">
+                                <i class="fas fa-phone text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Phone</h3>
+                                <p class="text-gray-600">(604) 555-1234</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-white rounded-full p-3 shadow-md mr-4">
+                                <i class="fas fa-envelope text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Email</h3>
+                                <p class="text-gray-600">john@lanaexteriors.ca</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-white rounded-full p-3 shadow-md mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg">Location</h3>
+                                <p class="text-gray-600">Alberta and surrounding areas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <div class="bg-white p-8 rounded-xl shadow-xl">
+                        <h3 class="text-2xl font-semibold mb-6">Request a Free Consultation</h3>
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-gray-700 font-medium mb-2" for="first-name">First Name</label>
+                                    <input type="text" id="first-name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 font-medium mb-2" for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="email">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="phone">Phone</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="service">Service Interested In</label>
+                                <select id="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option value="" selected disabled>Select a service</option>
+                                    <option value="windows">Windows & Doors</option>
+                                    <option value="siding">Siding</option>
+                                    <option value="roofing">Roofing</option>
+                                    <option value="multiple">Multiple Services</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="message">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-full text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
+                                Schedule Your Consultation
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -328,10 +596,29 @@
                 <div>
                     <h3 class="text-xl font-bold mb-4">Lana Exteriors</h3>
                     <p class="text-gray-400">Your trusted partner for premium exterior renovations.</p>
+                    <div class="mt-4" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress" class="text-gray-400 block">123 Main Street</span>
+                        <span itemprop="addressLocality" class="text-gray-400 block">Calgary</span>
+                        <span itemprop="addressRegion" class="text-gray-400">AB</span>
+                        <span itemprop="postalCode" class="text-gray-400 ml-1">T2P 1A2</span>
+                        <meta itemprop="addressCountry" content="CA">
+                    </div>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contact</h3>
-                    <a href="mailto:john@lanaexteriors.ca" class="text-gray-400 hover:text-white transition-colors duration-300 block">john@lanaexteriors.ca</a>
+                    <a href="mailto:john@lanaexteriors.ca" itemprop="email" class="text-gray-400 hover:text-white transition-colors duration-300 block">john@lanaexteriors.ca</a>
+                    <a href="tel:+14035551234" itemprop="telephone" class="text-gray-400 hover:text-white transition-colors duration-300 block mt-2">(403) 555-1234</a>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="https://facebook.com" aria-label="Facebook" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" aria-label="Instagram" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" aria-label="LinkedIn" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Quick Links</h3>
@@ -353,19 +640,29 @@
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-12 pt-8 text-center">
-                <p class="text-gray-400">&copy; 2025 Lana Exteriors. All rights reserved.</p>
+                <p class="text-gray-400">&copy; <span itemprop="copyrightYear">2024</span> <span itemprop="name">Lana Exteriors</span>. All rights reserved.</p>
+                <meta itemprop="priceRange" content="$$$">
+                <meta itemprop="openingHours" content="Mo-Fr 08:00-17:00">
+                <meta itemprop="image" content="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf">
+                <meta itemprop="url" content="https://lanaexteriors.ca">
             </div>
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        // Initialize animations
         AOS.init({
             duration: 1000,
-            once: true
+            once: true,
+            offset: 100,
+            delay: 100,
+            easing: 'ease-in-out'
         });
 
+        // Initialize GSAP ScrollTrigger
         document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu functionality
             const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
             const mobileMenu = document.querySelector('header nav .mobile-menu');
             
@@ -391,7 +688,130 @@
                     });
                 });
             }
+
+            // Interactive FAQ functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const toggle = item.querySelector('.faq-toggle');
+                const answer = item.querySelector('.faq-answer');
+                
+                if (toggle && answer) {
+                    toggle.addEventListener('click', () => {
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item && otherItem.classList.contains('active')) {
+                                otherItem.classList.remove('active');
+                                otherItem.querySelector('.faq-toggle').classList.remove('fa-chevron-up');
+                                otherItem.querySelector('.faq-toggle').classList.add('fa-chevron-down');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        item.classList.toggle('active');
+                        toggle.classList.toggle('fa-chevron-down');
+                        toggle.classList.toggle('fa-chevron-up');
+                    });
+                }
+            });
+
+            // GSAP animations
+            gsap.registerPlugin(ScrollTrigger);
+            
+            // Animate service cards on scroll
+            gsap.utils.toArray('.service-card').forEach((card, i) => {
+                gsap.from(card, {
+                    y: 50,
+                    opacity: 0,
+                    duration: 0.8,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 80%",
+                        toggleActions: "play none none none"
+                    },
+                    delay: i * 0.2
+                });
+            });
+
+            // Animate testimonials with staggered effect
+            gsap.from(".testimonial-card", {
+                scrollTrigger: {
+                    trigger: "#testimonials",
+                    start: "top 70%"
+                },
+                opacity: 0,
+                y: 30,
+                stagger: 0.2,
+                duration: 1,
+                ease: "power2.out"
+            });
+
+            // Add parallax effect to hero section
+            gsap.to('.hero-gradient', {
+                scrollTrigger: {
+                    trigger: '.hero-gradient',
+                    start: 'top top',
+                    end: 'bottom top',
+                    scrub: true
+                },
+                backgroundPosition: '0 100%',
+                ease: 'none'
+            });
+            
+            // Ensure service images load correctly
+            document.querySelectorAll('.service-card img').forEach(img => {
+                img.onerror = function() {
+                    this.src = 'https://placehold.co/600x400/e6f7ff/0369a1?text=Premium+Exterior+Solutions';
+                };
+                
+                // Force reload image if currently blank
+                if (img.complete && img.naturalHeight === 0) {
+                    img.src = 'https://placehold.co/600x400/e6f7ff/0369a1?text=Premium+Exterior+Solutions';
+                }
+            });
         });
+
+        // Form validation and submission handling
+        const contactForm = document.querySelector('#contact form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Basic form validation
+                const inputs = contactForm.querySelectorAll('input, textarea, select');
+                let isValid = true;
+                
+                inputs.forEach(input => {
+                    if (input.value.trim() === '' && input.hasAttribute('required')) {
+                        isValid = false;
+                        input.classList.add('border-red-500');
+                    } else {
+                        input.classList.remove('border-red-500');
+                    }
+                });
+                
+                if (isValid) {
+                    // Simulate form submission
+                    const submitButton = contactForm.querySelector('button[type="submit"]');
+                    submitButton.disabled = true;
+                    submitButton.textContent = 'Sending...';
+                    
+                    // In a real application, you would send the form data to a server here
+                    setTimeout(() => {
+                        submitButton.textContent = 'Message Sent!';
+                        submitButton.classList.add('bg-green-600');
+                        contactForm.reset();
+                        
+                        setTimeout(() => {
+                            submitButton.disabled = false;
+                            submitButton.textContent = 'Schedule Your Consultation';
+                            submitButton.classList.remove('bg-green-600');
+                        }, 3000);
+                    }, 1500);
+                }
+            });
+        }
     </script>
 </body>
 </html>
